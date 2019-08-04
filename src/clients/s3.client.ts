@@ -1,7 +1,7 @@
 import AWS from 'aws-sdk';
-import { UploadClient, Target, File } from '../models';
+import { UploadClient, File, Target, DownloadClient } from '../models';
 
-export class S3Client implements UploadClient {
+export class S3Client implements UploadClient, DownloadClient {
     s3: AWS.S3;
 
     constructor() {
@@ -28,6 +28,12 @@ export class S3Client implements UploadClient {
             return '';
         }
     };
+
+    public getFile = async (target: Target) => {
+        const value = await this.getObject(target.name, target.location || '');
+
+        return value;
+    }
 
     private getBucketNames = async () => {
         const buckets = await this.s3.listBuckets().promise();
@@ -66,6 +72,6 @@ export class S3Client implements UploadClient {
 
         const result = await this.s3.getObject(getParams).promise();
 
-        return result!.Body;
+        return result!.Body!.toString();
     }
 }
