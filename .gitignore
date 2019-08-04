@@ -27,6 +27,7 @@ filestypings/
 # Assets
 public/
 dist/
+lib/
 
 # Coverage reportscoverage# API keys and secrets.env
 coverage

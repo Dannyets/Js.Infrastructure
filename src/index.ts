@@ -5,7 +5,7 @@ import * as commonModels from './models';
 import * as commonRepositories from './repositories';
 import * as commonServices from './services';
 import * as commonUtils from './utils';
-
+    
 export const clients = commonClients;
 export const factories = commonFactories;
 export const middlewares = commonMiddlewares;
