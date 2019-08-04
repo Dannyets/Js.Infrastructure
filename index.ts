@@ -1,10 +1,10 @@
-import * as commonClients from './clients';
-import * as commonFactories from './factories';
-import * as commonMiddlewares from './middlewares';
-import * as commonModels from './models';
-import * as commonRepositories from './repositories';
-import * as commonServices from './services';
-import * as commonUtils from './utils';
+import * as commonClients from './src/clients';
+import * as commonFactories from './src/factories';
+import * as commonMiddlewares from './src/middlewares';
+import * as commonModels from './src/models';
+import * as commonRepositories from './src/repositories';
+import * as commonServices from './src/services';
+import * as commonUtils from './src/utils';
 
 export const clients = commonClients;
 export const factories = commonFactories;

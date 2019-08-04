@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { authClient } from '../clients';
+import { clientFactory } from '../factories';
 import { configUtils } from '../utils';
 import { ConfigKey } from '../models';
 
@@ -19,7 +19,8 @@ export const securityMiddleware = (accessibleForRoles: string[]) =>
         return;
     }
 
-    authClient.isAuthenticated(accessibleForRoles, authToken)
+    clientFactory.createAuthClient()
+         .isAuthenticated(accessibleForRoles, authToken)
          .then(() => { next(); })
          .catch(next);
 };
