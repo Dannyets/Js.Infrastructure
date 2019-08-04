@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:run": "tsc",
+    "build:clean": "rimraf dist",
+    "build": "npm run build:clean && npm run build:run"
   },
   "repository": {
     "type": "git",
@@ -33,6 +36,8 @@
     "packageManager": "npm"
   },
   "devDependencies": {
-    "@types/mongodb": "^3.1.31"
+    "@bit/bit.envs.compilers.typescript": "^3.0.5",
+    "@types/mongodb": "^3.1.31",
+    "rimraf": "^2.6.3"
   }
 }
