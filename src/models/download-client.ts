@@ -1,5 +1,5 @@
-import { Target } from '.';
+import { File } from '.';
 
 export interface DownloadClient {
-    getFile: (target: Target) => Promise<string>;
+    getFile: (target: File) => Promise<string>;
 }
