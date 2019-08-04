@@ -1,6 +1,6 @@
 {
   "name": "js.infrastructure",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "",
   "main": "lib/index.ts",
   "types": "lib/index.d.ts",

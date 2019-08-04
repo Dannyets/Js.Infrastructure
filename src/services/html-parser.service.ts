@@ -13,7 +13,7 @@ export class HtmlParserService {
 
     getValues = <T>(docmunet: JSDOM, querySelector: string, format: (element: Element) => T) => {
         const elements = docmunet.window.document.querySelectorAll(querySelector);
-
+        
         let fomattedElements: T[] = [];
 
         elements.forEach(e => fomattedElements.push(format(e)));
