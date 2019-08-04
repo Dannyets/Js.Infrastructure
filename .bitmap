@@ -34,7 +34,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "dannyets.js-infrastructure/factories@1.0.1": {
+    "dannyets.js-infrastructure/factories@1.0.2": {
         "files": [
             {
                 "relativePath": "factories/class.factory.ts",
@@ -77,7 +77,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "dannyets.js-infrastructure/middlewares@1.0.1": {
+    "dannyets.js-infrastructure/middlewares@1.0.2": {
         "files": [
             {
                 "relativePath": "middlewares/error.middleware.ts",
@@ -198,7 +198,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "dannyets.js-infrastructure/repositories@1.0.1": {
+    "dannyets.js-infrastructure/repositories@1.0.2": {
         "files": [
             {
                 "relativePath": "repositories/in-memory.repository.ts",
@@ -249,17 +249,12 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "dannyets.js-infrastructure/utils@1.0.0": {
+    "dannyets.js-infrastructure/utils@1.0.2": {
         "files": [
             {
                 "relativePath": "utils/config.utils.ts",
                 "test": false,
                 "name": "config.utils.ts"
-            },
-            {
-                "relativePath": "utils/configuration.utils.ts",
-                "test": false,
-                "name": "configuration.utils.ts"
             },
             {
                 "relativePath": "utils/general.utils.ts",
