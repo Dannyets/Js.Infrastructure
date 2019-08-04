@@ -17,9 +17,22 @@
   },
   "homepage": "https://github.com/Dannyets/Js.Infrastructure#readme",
   "dependencies": {
+    "aws-sdk": "^2.503.0",
     "axios": "^0.19.0",
     "express": "^4.17.1",
+    "fs": "0.0.1-security",
     "joi": "^14.3.1",
+    "jsdom": "^15.1.1",
+    "mongodb": "^3.3.0-beta2",
+    "uuid": "^3.3.2",
     "winston": "^3.2.1"
+  },
+  "bit": {
+    "env": {},
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
+  },
+  "devDependencies": {
+    "@types/mongodb": "^3.1.31"
   }
 }

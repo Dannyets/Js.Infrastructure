@@ -10,7 +10,6 @@ export * from './lambda-params';
 export * from './lambda-type';
 export * from './notification';
 export * from './notification-client';
-export * from './payload';
 export * from './route';
 export * from './source';
 export * from './target';

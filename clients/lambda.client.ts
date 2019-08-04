@@ -1,6 +1,6 @@
 import AWS from 'aws-sdk';
 import { InvocationRequest } from 'aws-sdk/clients/lambda';
-import { Payload, LambdaParams } from '../models';
+import { LambdaParams } from '../models';
 
 export class LambdaClient {
     private lambda: AWS.Lambda;
